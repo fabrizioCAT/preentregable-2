@@ -1,0 +1,211 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* estilos generales*/
+
+body{
+    background-color: #E6E6DD;
+    color: white;
+    
+}
+
+
+/* estilos del haeder*/
+
+.encabezado{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.encabezado h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+.encabezado h1 span{
+    color: deepskyblue;
+}
+
+.encabezado li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.encabezado nav ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+/* Electrodomesticos */
+
+
+.electrodomesticos {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.electrodomesticos img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0;
+    gap: 30px; 
+    align-items: center;
+   
+}
+
+
+.electrodomesticos h2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.electrodomesticos h3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+
+
+/* Estilos main*/
+
+
+.contenedorElectrodomesticos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.electrodomestico {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
+}
+
+.principal img {
+    max-width: 100%;
+
+}
+
+.principal p {
+    margin: 10px 0;
+    color: black;
+}
+
+
+/* estilos footer*/
+
+.footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lo hacemos responsive:  */
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+    /*Imagen ilustrativa + propaganda*/
+
+    .electrodomesticos {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .electrodomesticos h2 .electrodomesticos h3 {
+        font-size: inherit;
+    }
+
+    
+    .contenedorElectrodomesticos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+
+@media (max-width:768px) {
+    /*Destinos */
+
+    .contenedorElectrodomesticos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.herramientas p{
+    text-align: center;
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: tomato;
+}
+
+.herramientas h1{
+    color: black;
+}
